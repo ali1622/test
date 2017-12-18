@@ -8,4 +8,9 @@ pipeline {
         }   
      }
     }  
-  }  
+   Post{
+   archiveArtifacts artifacts:test/*, fingerprint:true
+     } 
+    
+   }  
+
