@@ -9,7 +9,8 @@ pipeline {
      }
     }  
    Post{
+    success{
    archiveArtifacts artifacts:test/*, fingerprint:true
      } 
-   }  
-
+   } 
+  }
