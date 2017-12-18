@@ -7,13 +7,6 @@ pipeline {
       sh  'echo  BUILD'  
         }   
      }
-   stage("build-unit"){
-     steps {
-       sh ' cd ~/repo/test/'
-       sh 'git add .'
-       sh 'git commit -am "pipelinecommit" '
-       sh 'git push origin dev'      
-            }
           } 
    stage("build-Junit"){
     steps  {
