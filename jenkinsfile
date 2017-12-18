@@ -9,8 +9,8 @@ pipeline {
      }
     }  
    post {
-    success  {
-   archiveArtifacts artifacts: 'test/', fingerprint: true
+   always {
+   archiveArtifacts artifacts: 'file.html', fingerprint: true
      } 
    } 
   }
