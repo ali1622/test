@@ -9,7 +9,7 @@ pipeline {
      }
     }  
    Post{
-    success{
+    failure{
    archiveArtifacts artifacts:test/*, fingerprint:true
      } 
    } 
