@@ -9,6 +9,7 @@ pipeline {
      }
    stage("build-unit"){
      steps {
+       sh ' cd ~/repo/test/'
        sh 'git add .'
        sh 'git commit -am "pipelinecommit" '
        sh 'git push origin dev'      
@@ -21,7 +22,7 @@ pipeline {
        junit 'report/results.xml'
           }
        }
-     }  
+     } 
    post {
    always {
    archiveArtifacts artifacts: 'file.html', fingerprint: true
