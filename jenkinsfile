@@ -8,8 +8,8 @@ pipeline {
         }   
      }
     }  
-   Post{
-    failure{
+   post {
+    failure {
    archiveArtifacts artifacts: 'test/', fingerprint: true
      } 
    } 
