@@ -7,7 +7,21 @@ pipeline {
       sh  'echo  BUILD'  
         }   
      }
-    }  
+   stage("build-unit"){
+     steps {
+       sh 'git add .'
+       sh 'git commit -am "pipelinecommit" '
+       sh 'git push origin dev'      
+            }
+          } 
+   stage("build-Junit"){
+    steps  {
+       sh 'ant -f build.xml -v'
+       sh ' ant -f test.xml -v'
+       junit 'report/results.xml'
+          }
+       }
+     }  
    post {
    always {
    archiveArtifacts artifacts: 'file.html', fingerprint: true
