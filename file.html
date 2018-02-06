@@ -1,3 +1,129 @@
 this is the build test>>>>>>>
 auto swap succeded
 round 2
+
+
+
+lo is a loopback device. You can imagine it as a virtual network device that is on all systems, even if they aren't connected to any network. It has an IP address of 127.0.0.1 and can be used to access network services locally. For example, if you run a webserver on your machine and browse to it with Firefox or Chromium on the same machine, then it will go via this network device.
+
+There is no wi-fi adapter listed.  lspci and lsusb may help you find them in the first place at which point you need to figure out why it isn't working.
+
+
+
+
+edited 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+34.236.62.25
+
+
+bin
+it contains all binary files. contains all normal user commands
+sbin
+it contains all super binay executable files used for sytem administration. ex fdisk, ifconfig[configuring network interfaces]
+var
+contains all logistics files and print files ranging from small size to big size
+proc
+contains all instance process files. or running program files. not files found only PID is found related to processes
+kernel
+contains all kernel related files
+opt
+optinal directories used to store all third party software ex. sap sas 
+usr
+contains all the users information files about their directories and their created files
+can contain shared files,shared libraby file sources.uniform shared resources. contains all information about all the directories
+ home
+it is a defualt directory for all users data of their dir and account related information. can find all the normal user's home directory and their sub-directory here. any can 
+also be found
+lib
+contains all library resources shared and some time kernel related files. also c programming related files
+tmp
+contains all the configuration files and booting files b/w the system boots. applications temporary files
+mnt 
+temporary file system where all the mounted devices can be seen ex. cdrom usb
+etc
+contains all booting or configuration files for ex. passwords related booting related groups related
+dev
+contains all the information about the devices installed on the server or a machine and their partitions ex. scsi ide 
+
+
+
+first sector on hard disk stores the information about the MBR 
+then the primary partition and secondary partition is loaded 
+file system type
+free blocks availble
+free block size
+inode number of root directories
+magic numbers
+
+
+INODE
+file types{regular file character file block file binary file}
+file ownership indication 
+file access permission , setuid ,setgid ,stickybit
+number of links
+last modification /last accessed
+size of the file in bytes
+pointers to the data blocks
+
+fsck phases
+inode and inode block mapc checks
+inode size checks
+inode allocation checks
+freemap checks
+links count checks
+superblock checks
+directory checks
+pathname checks
+
+
+group 4 fields
+
+>groupname
+>groupassword
+>groupID
+>list of users in group
+
+passwd 7 fields
+>username
+>userpasswd
+>userid
+>user's group id
+>comment
+>default dir
+>default shell
+
+shadow 8 fields
+>username
+>password
+>last password change
+>minimum
+/.maximum
+>warn
+>inactive
+expire
+
+
+
+
+gateway makes one port to connect to other port. in simpe words helps one environment or one computer  to connect other environment or computer.
+like in switches how every department is divided into number of switches. so gateway helps each and evry deparrtment connects to each other.
+
+switches helps to send a packed on the mac addresses or assigned ports. each enterpise level switches contains 0 to 48 ports.
+
+DMZ (
+
